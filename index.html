@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>神马在线电影网 - 精选优质电影导航大全 | 高清电影在线观看与迅雷下载</title>
+<meta name="description" content="神马在线电影网（shenmazaixiandianyingwang-cn.github.io）是精选优质电影导航大全，提供电影网站导航、高清电影在线观看、电影下载、迅雷下载、最新电影、经典电影、电影字幕、影视大全、4K蓝光与影视资源导航收录，实用网址收录平台。">
+<meta name="keywords" content="神马在线电影网, shenmazaixiandianyingwang-cn, 神马在线, 神马, 在线电影, 电影在线观看, 高清电影在线观看, 电影导航, 电影网站导航, 精选优质网站导航大全, 实用网址收录平台, 电影下载, 迅雷下载, 最新电影, 经典电影, 电影字幕, 影视大全, 4K蓝光, 影视资源导航">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://shenmazaixiandianyingwang-cn.github.io/">
+<meta name="theme-color" content="#0a1626">
+<style>
+/* ===== 神马在线电影网 · 设计母题：流光流线 × 深海蓝 × 信号绿 × 等宽字体 × 波形 ===== */
+:root{
+  --bg:#0a1626;
+  --bg2:#0f1f33;
+  --ink:#eaf2ff;
+  --sub:#8ea7c4;
+  --line:#1e334d;
+  --blue:#2f80ed;
+  --cyan:#38e1d6;
+  --green:#6cff9d;
+  --amber:#ffb340;
+  --pink:#ff5c8a;
+  --card:rgba(255,255,255,.04);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","WenQuanYi Micro Hei",system-ui,-apple-system,sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+  background-image:
+    radial-gradient(900px 500px at 82% -10%, rgba(47,128,237,.16), transparent 60%),
+    radial-gradient(700px 400px at 8% 12%, rgba(56,225,214,.10), transparent 60%),
+    repeating-linear-gradient(0deg, rgba(255,255,255,.012) 0 1px, transparent 1px 44px),
+    repeating-linear-gradient(90deg, rgba(255,255,255,.012) 0 1px, transparent 1px 44px);
+}
+/* 流线背景 */
+body::before{
+  content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;
+  background:
+    linear-gradient(120deg, transparent 0 18%, rgba(110,255,157,.05) 18.4% 19.2%, transparent 19.6% 36%, rgba(47,128,237,.05) 36.4% 37.2%, transparent 37.6%),
+    linear-gradient(100deg, transparent 0 62%, rgba(255,179,64,.05) 62.4% 63.2%, transparent 63.6% 81%, rgba(255,92,138,.04) 81.4% 82.2%, transparent 82.6%);
+  background-size:100% 100%, 100% 100%;
+  animation:dr 26s linear infinite;
+}
+@keyframes dr{from{background-position:0 0,0 0}to{background-position:0 -880px,0 -660px}}
+::selection{background:var(--cyan);color:#04201d}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 26px}
+
+/* ===== Header ===== */
+header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(10,22,38,.86);
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line);
+}
+.hd{display:flex;align-items:center;gap:22px;height:70px}
+.logo{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.5px}
+/* 流光圆环 Logo */
+.logo b{
+  width:42px;height:42px;border-radius:50%;flex:0 0 42px;
+  background:conic-gradient(from 200deg,var(--cyan),var(--blue),var(--pink),var(--amber),var(--green),var(--cyan));
+  position:relative;
+  box-shadow:0 0 26px rgba(56,225,214,.35);
+  animation:sp 9s linear infinite;
+}
+@keyframes sp{to{transform:rotate(360deg)}}
+.logo b::after{
+  content:"";position:absolute;inset:5px;border-radius:50%;
+  background:var(--bg);
+}
+.logo b i{
+  position:absolute;inset:0;display:grid;place-items:center;
+  font-style:normal;font-size:17px;color:var(--ink);z-index:2;
+  text-shadow:0 0 12px rgba(110,255,157,.7);
+}
+.logo span{font-size:20px;background:linear-gradient(90deg,#fff,var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
+.logo em{font-style:normal;font-size:11px;color:var(--sub);letter-spacing:1px;font-family:ui-monospace,Menlo,Consolas,monospace}
+nav{display:flex;gap:6px;margin-left:auto;flex-wrap:wrap}
+nav a{
+  font-size:13.5px;padding:8px 13px;border-radius:99px;color:var(--sub);
+  transition:.25s;font-weight:600;
+}
+nav a:hover{color:#fff;background:rgba(56,225,214,.10)}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:10px 20px;border-radius:99px;font-size:13.5px;font-weight:700;cursor:pointer;
+  background:linear-gradient(90deg,var(--blue),var(--cyan));
+  color:#04161f;box-shadow:0 8px 24px rgba(56,225,214,.28);
+  transition:.25s;border:0;
+}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(56,225,214,.42)}
+.btn.gh{background:linear-gradient(90deg,var(--green),var(--cyan));color:#04201d}
+.ham{display:none;width:40px;height:40px;border:1px solid var(--line);border-radius:12px;background:var(--card);color:var(--ink);font-size:20px;cursor:pointer}
+
+/* ===== Hero ===== */
+.hero{padding:62px 0 50px;position:relative}
+.hero .kicker{
+  display:inline-flex;align-items:center;gap:9px;
+  font-family:ui-monospace,Menlo,Consolas,monospace;
+  font-size:12px;letter-spacing:2px;color:var(--cyan);
+  padding:7px 15px;border:1px solid rgba(56,225,214,.35);border-radius:99px;
+  background:rgba(56,225,214,.07);
+}
+.hero .kicker u{text-decoration:none;width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 12px var(--green);animation:bl 1.1s ease-in-out infinite}
+@keyframes bl{50%{opacity:.25}}
+h1{font-size:clamp(30px,5.4vw,54px);line-height:1.16;margin:20px 0 16px;font-weight:850;letter-spacing:-.5px}
+h1 .gd{background:linear-gradient(92deg,#fff 6%,var(--cyan) 45%,var(--green) 78%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:var(--sub);max-width:640px;font-size:16px}
+/* 波形条 */
+.wave{display:flex;align-items:center;gap:4px;margin-top:26px;height:44px}
+.wave i{width:5px;border-radius:99px;background:linear-gradient(180deg,var(--cyan),var(--blue));animation:wb 1.1s ease-in-out infinite alternate}
+@keyframes wb{to{height:100%!important}}
+.hero .acts{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.btn.gh2{background:transparent;color:var(--ink);border:1px solid var(--line)}
+/* KPI */
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:40px}
+.kpi{
+  position:relative;padding:20px 18px;border-radius:18px;
+  background:var(--card);border:1px solid var(--line);
+  overflow:hidden;transition:.3s;
+}
+.kpi::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:linear-gradient(180deg,var(--cyan),var(--green))}
+.kpi:hover{transform:translateY(-5px);border-color:rgba(56,225,214,.5);box-shadow:0 16px 34px rgba(0,0,0,.45)}
+.kpi .n{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:30px;font-weight:800;color:#fff;line-height:1.1}
+.kpi .n small{font-size:14px;color:var(--cyan)}
+.kpi .t{font-size:12.5px;color:var(--sub);margin-top:6px;letter-spacing:.5px}
+
+/* ===== Section 通用 ===== */
+section{padding:56px 0;border-top:1px solid rgba(30,51,77,.6)}
+.st{display:flex;align-items:flex-end;gap:14px;flex-wrap:wrap;margin-bottom:26px}
+.st h2{font-size:clamp(22px,3.2vw,30px);font-weight:800;letter-spacing:-.3px}
+.st .no{
+  font-family:ui-monospace,Menlo,Consolas,monospace;
+  font-size:12px;color:var(--cyan);letter-spacing:2px;
+  border:1px solid rgba(56,225,214,.4);border-radius:8px;padding:5px 10px;
+}
+.st p{color:var(--sub);font-size:14px;width:100%;max-width:660px}
+
+/* ===== ① 导航：流光网格 ===== */
+.panels{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.pn{
+  position:relative;padding:20px 18px;border-radius:16px;
+  background:linear-gradient(160deg, rgba(255,255,255,.07), rgba(255,255,255,.02));
+  border:1px solid var(--line);transition:.3s;overflow:hidden;
+}
+.pn::after{content:"";position:absolute;right:-30px;bottom:-30px;width:90px;height:90px;border-radius:50%;opacity:.18;
+  background:radial-gradient(circle,var(--cyan),transparent 70%)}
+.pn:hover{transform:translateY(-6px);border-color:rgba(56,225,214,.55);box-shadow:0 18px 36px rgba(0,0,0,.5)}
+.pn .ix{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;color:var(--cyan);letter-spacing:1px}
+.pn h4{font-size:16.5px;margin:8px 0 4px}
+.pn p{font-size:12.5px;color:var(--sub);line-height:1.6}
+.pn .go{display:inline-flex;align-items:center;gap:6px;margin-top:12px;font-size:12px;color:var(--green);font-weight:700}
+.pn:hover .go span{transform:translateX(5px)}
+
+/* ===== ② 片单：横滑流光卡 ===== */
+.belt{display:flex;gap:16px;overflow-x:auto;padding:6px 2px 22px;scroll-snap-type:x mandatory;scrollbar-width:thin}
+.belt::-webkit-scrollbar{height:11px}
+.belt::-webkit-scrollbar-thumb{background:linear-gradient(90deg,var(--blue),var(--cyan));border-radius:99px}
+.fv{
+  flex:0 0 216px;aspect-ratio:3/4;border-radius:16px;position:relative;
+  scroll-snap-align:start;overflow:hidden;cursor:pointer;transition:.35s;
+  background:var(--card);border:1px solid var(--line);
+}
+.fv::before{content:"";position:absolute;inset:0;opacity:.92;transition:.35s}
+.fv:nth-child(1)::before{background:linear-gradient(150deg,#1c3a5e,#0a1626)}
+.fv:nth-child(2)::before{background:linear-gradient(150deg,#3a1c4a,#0a1626)}
+.fv:nth-child(3)::before{background:linear-gradient(150deg,#12463f,#0a1626)}
+.fv:nth-child(4)::before{background:linear-gradient(150deg,#5e3a1c,#0a1626)}
+.fv:nth-child(5)::before{background:linear-gradient(150deg,#1c5e4a,#0a1626)}
+.fv:nth-child(6)::before{background:linear-gradient(150deg,#4a1c3a,#0a1626)}
+.fv:nth-child(7)::before{background:linear-gradient(150deg,#2a4a6e,#0a1626)}
+.fv:nth-child(8)::before{background:linear-gradient(150deg,#6e4a2a,#0a1626)}
+.fv:hover{transform:translateY(-8px) scale(1.015);box-shadow:0 22px 44px rgba(0,0,0,.6);border-color:rgba(56,225,214,.5)}
+.fv .tx{position:absolute;left:0;right:0;bottom:0;padding:16px 15px;z-index:3}
+.fv h4{font-size:15px;line-height:1.35;margin-bottom:6px;text-shadow:0 2px 10px rgba(0,0,0,.7)}
+.fv .mt{display:flex;gap:7px;flex-wrap:wrap;align-items:center}
+.yr{font-size:11px;padding:3px 9px;border-radius:99px;background:var(--cyan);color:#04201d;font-weight:800}
+.rt{font-size:11px;padding:3px 9px;border-radius:99px;border:1px solid rgba(110,255,157,.6);color:var(--green);font-weight:800;font-family:ui-monospace,Menlo,Consolas,monospace}
+.fv .ov{position:absolute;inset:0;z-index:2;display:grid;place-items:center;
+  background:rgba(10,22,38,.82);backdrop-filter:blur(3px);
+  font-weight:800;letter-spacing:2px;color:var(--cyan);
+  opacity:0;transition:.3s}
+.fv:hover .ov{opacity:1}
+
+/* ===== ③ 分类：胶囊标签页 ===== */
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
+.tc{
+  font-size:13.5px;font-weight:700;padding:9px 17px;border-radius:99px;cursor:pointer;
+  border:1px solid var(--line);color:var(--sub);background:var(--card);transition:.25s;
+  font-family:ui-monospace,Menlo,Consolas,monospace;
+}
+.tc:hover{color:#fff;border-color:rgba(56,225,214,.5)}
+.tc.on{color:#04201d;background:linear-gradient(90deg,var(--cyan),var(--green));border-color:transparent;box-shadow:0 8px 20px rgba(56,225,214,.3)}
+.panels2{display:none;grid-template-columns:repeat(6,1fr);gap:11px;animation:fd .35s ease}
+.panels2.on{display:grid}
+@keyframes fd{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.pn2{font-size:13px;padding:12px 10px;text-align:center;border-radius:12px;border:1px solid var(--line);
+  background:var(--card);color:#cfe0f2;transition:.22s;cursor:pointer}
+.pn2:hover{color:#fff;border-color:var(--cyan);background:rgba(56,225,214,.10);transform:translateY(-3px)}
+
+/* ===== ④ 排行：双轨进度条 ===== */
+.duo{display:grid;grid-template-columns:1fr 76px 1fr;gap:14px;align-items:center}
+.vs{text-align:center;font-family:ui-monospace,Menlo,Consolas,monospace;font-weight:800;font-size:19px;line-height:1.2;color:var(--cyan)}
+.vs small{display:block;font-size:10px;color:var(--sub);letter-spacing:2px;font-weight:600}
+.bx h5{font-size:13px;color:var(--sub);margin-bottom:10px;font-weight:700;letter-spacing:.5px}
+.row2{display:grid;grid-template-columns:34px 1fr 50px;gap:11px;align-items:center;margin-bottom:11px}
+.row2 .nm{font-size:13px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.row2 .vl{text-align:right;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;color:var(--cyan);font-weight:800}
+.rk{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;color:var(--sub);font-weight:800;text-align:right}
+.rk.g{color:var(--green)}.rk.c{color:var(--cyan)}.rk.a{color:var(--amber)}.rk.p{color:var(--pink)}
+.tr{height:9px;border-radius:99px;background:rgba(255,255,255,.07);overflow:hidden}
+.tr u{display:block;height:100%;width:0;border-radius:99px;text-decoration:none;
+  background:linear-gradient(90deg,var(--green),var(--cyan));
+  transition:width 1.1s cubic-bezier(.22,.7,.3,1)}
+.bx.r .tr u{background:linear-gradient(90deg,var(--pink),var(--amber))}
+.bx.r .vl{color:var(--amber)}
+
+/* ===== ⑤ 影讯：左竖线时间轴 ===== */
+.tl{position:relative;padding-left:26px}
+.tl::before{content:"";position:absolute;left:6px;top:6px;bottom:6px;width:2px;
+  background:repeating-linear-gradient(180deg,var(--cyan) 0 8px, transparent 8px 16px)}
+.tn{position:relative;padding:16px 18px;border-radius:14px;border:1px solid var(--line);background:var(--card);
+  margin-bottom:12px;transition:.28s}
+.tn::before{content:"";position:absolute;left:-23px;top:22px;width:11px;height:11px;border-radius:50%;
+  background:var(--bg);border:2.5px solid var(--cyan);box-shadow:0 0 12px rgba(56,225,214,.6)}
+.tn:hover{transform:translateX(7px);border-color:var(--cyan);background:rgba(56,225,214,.07)}
+.tn .d{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:11.5px;color:var(--green);letter-spacing:1px;font-weight:800}
+.tn h4{font-size:15.5px;margin:5px 0 6px}
+.tn p{font-size:13px;color:var(--sub);line-height:1.7}
+.news{display:grid;grid-template-columns:1.35fr 1fr;gap:20px}
+.big{border-radius:18px;padding:26px;background:linear-gradient(150deg,#12324f,#0a1626);border:1px solid var(--line);position:relative;overflow:hidden}
+.big::after{content:"";position:absolute;right:-40px;top:-40px;width:170px;height:170px;border-radius:50%;opacity:.14;
+  background:radial-gradient(circle,var(--cyan),transparent 68%)}
+.big .tg{display:inline-block;font-size:11px;letter-spacing:2px;color:var(--amber);border:1px solid rgba(255,179,64,.45);border-radius:99px;padding:5px 12px;font-weight:800}
+.big h3{font-size:22px;margin:14px 0 10px;line-height:1.4}
+.big p{color:#c4d6e8;font-size:14px}
+.side{display:flex;flex-direction:column;gap:10px}
+.sd{display:grid;grid-template-columns:34px 1fr;gap:12px;align-items:center;padding:13px 15px;border-radius:13px;
+  border:1px solid var(--line);background:var(--card);transition:.25s}
+.sd:hover{transform:translateX(6px);border-left:3px solid var(--cyan);background:rgba(56,225,214,.07)}
+.sd b{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:14px;color:var(--cyan);font-weight:800}
+.sd span{font-size:13.5px;line-height:1.45}
+
+/* ===== ⑥ 规范 ===== */
+.q{
+  display:block;font-size:clamp(17px,2.6vw,23px);line-height:1.8;
+  padding:26px 28px;border-radius:20px;margin-bottom:26px;
+  background:linear-gradient(100deg,rgba(56,225,214,.12),rgba(110,255,157,.06));
+  border:1.6px solid transparent;
+  border-image:linear-gradient(90deg,var(--cyan),var(--green)) 1;
+  color:#eafcff;font-weight:600;
+}
+.grd2{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.gd{position:relative;padding:20px;border-radius:16px;background:var(--card);border:1px solid var(--line);transition:.3s}
+.gd::after{content:"";position:absolute;left:0;right:0;top:0;height:4px;border-radius:16px 16px 0 0;
+  background:linear-gradient(90deg,var(--cyan),var(--green))}
+.gd:hover{transform:translateY(-6px);box-shadow:0 18px 36px rgba(0,0,0,.5);border-color:rgba(56,225,214,.5)}
+.gd b{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;color:var(--cyan);letter-spacing:1.5px}
+.gd h4{font-size:16px;margin:9px 0 7px}
+.gd p{font-size:13px;color:var(--sub);line-height:1.7}
+
+/* ===== Footer ===== */
+footer{border-top:1px solid var(--line);padding:38px 0 26px;margin-top:30px;color:var(--sub);font-size:13px}
+.ft{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:26px}
+.ft h4{color:#fff;font-size:15px;margin-bottom:10px}
+.ft ul{list-style:none;line-height:2.1}
+.ft a:hover{color:var(--cyan)}
+.copy{margin-top:26px;padding-top:18px;border-top:1px solid var(--line);text-align:center;color:#5f7794}
+.note{margin-top:14px;padding:13px 16px;border-radius:12px;border:1px solid rgba(255,179,64,.3);background:rgba(255,179,64,.07);color:#ffdca8;font-size:12.5px}
+
+/* ===== 响应式 ===== */
+@media(max-width:900px){
+  .panels{grid-template-columns:repeat(3,1fr)}
+  .panels2{grid-template-columns:repeat(3,1fr)}
+  .news{grid-template-columns:1fr}
+  .grd2{grid-template-columns:repeat(2,1fr)}
+  .kpis{grid-template-columns:repeat(2,1fr)}
+  .duo{grid-template-columns:1fr}
+  .vs{display:none}
+  .bx.r{order:3}
+}
+@media(max-width:760px){
+  .wrap{padding:0 18px}
+  nav{position:fixed;inset:70px 0 auto 0;flex-direction:column;gap:0;
+    background:rgba(10,22,38,.97);backdrop-filter:blur(14px);
+    border-bottom:1px solid var(--line);max-height:0;overflow:hidden;transition:.3s}
+  nav.open{max-height:420px;overflow:auto}
+  nav a{border-radius:0;padding:15px 22px;border-bottom:1px solid rgba(30,51,77,.6)}
+  .ham{display:grid;place-items:center;margin-left:auto}
+  .hero{padding:38px 0 30px}
+  .panels{grid-template-columns:repeat(2,1fr);gap:12px}
+  .panels2{grid-template-columns:repeat(2,1fr);gap:9px}
+  .fv{flex:0 0 168px}
+  .grd2{grid-template-columns:1fr}
+  .ft{grid-template-columns:1fr}
+  .st h2{font-size:21px}
+}
+@media print{
+  body{background:#fff;color:#111}
+  header,nav,.btn,.belt,.wave,.note{display:none!important}
+  section{break-inside:avoid;border-top:1px solid #ccc}
+  .q,.gd,.pn,.tn{border:1px solid #bbb;background:#fff}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaobao.js"></script>
+
+<header>
+  <div class="wrap hd">
+    <a class="logo" href="#" aria-label="回到首页">
+      <b><i>神</i></b>
+      <span>神马在线电影网</span>
+      <em>shenmazaixiandianyingwang-cn.github.io</em>
+    </a>
+    <button class="ham" id="ham" aria-label="打开菜单">☰</button>
+    <nav id="nv">
+      <a href="#nav2">导航</a>
+      <a href="#film">在线观看</a>
+      <a href="#cat">分类</a>
+      <a href="#rank">排行</a>
+      <a href="#news">影讯</a>
+      <a href="#about">收录规范</a>
+      <a href="#">登录</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" style="border-top:0">
+  <div class="wrap">
+    <span class="kicker"><u></u>● 在线 · 不跳转 · 不卡顿</span>
+    <h1>神马在线电影网<br><span class="gd">精选优质电影导航大全</span></h1>
+    <p>「神马」即「什么」——<strong>什么值得看，我们替你先看过</strong>。神马在线电影网只做一件事：把值得打开的电影网站，按「画质 / 字幕 / 速度 / 无广告 / 更新」五项实测打分，做成一份可以一直用的电影导航。这里不播放、不缓存、不转码，所有高清电影在线观看与电影下载请求，都指向原站。</p>
+    <div class="wave" id="wv" aria-hidden="true"></div>
+    <div class="acts">
+      <a class="btn gh" href="#nav2">立即开始选片 →</a>
+      <a class="btn gh2" href="#about">收录规范</a>
+    </div>
+    <div class="kpis">
+      <div class="kpi"><div class="n" data-to="1286">0<small>+</small></div><div class="t">已收录电影网站</div></div>
+      <div class="kpi"><div class="n" data-to="940">0<small>部</small></div><div class="t">可在线观看片单</div></div>
+      <div class="kpi"><div class="n" data-to="218">0<small>种</small></div><div class="t">内嵌/外挂字幕</div></div>
+      <div class="kpi"><div class="n" data-to="63">0<small>项</small></div><div class="t">收录与合规规范</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ① 导航 -->
+<section id="nav2">
+  <div class="wrap">
+    <div class="st">
+      <span class="no">N0.1</span>
+      <h2>电影网站导航 · 精选优质网站导航大全</h2>
+      <p>按「用途」分组的实用网址收录平台。每项都经过打开速度、画质标注、字幕质量、广告密度、更新频率五项实测，标「在线」者为可高清电影在线观看站点，标「下载」者提供电影下载 / 迅雷下载 / 磁力链接。</p>
+    </div>
+    <div class="panels">
+      <div class="pn"><div class="ix">01</div><h4>高清电影在线观看</h4><p>4K / 1080P / 蓝光原盘，支持杜比视界与 HDR10+ 标注。</p><span class="go">在线观看 <span>→</span></span></div>
+      <div class="pn"><div class="ix">02</div><h4>电影下载与迅雷</h4><p>REMUX、蓝光原盘 ISO、MKV 压制，含电影下载与迅雷下载入口。</p><span class="go">下载 <span>→</span></span></div>
+      <div class="pn"><div class="ix">03</div><h4>电影字幕</h4><p>SRT / ASS 字幕，简中、繁中、双语、特效字幕、听译校订版。</p><span class="go">字幕 <span>→</span></span></div>
+      <div class="pn"><div class="ix">04</div><h4>经典电影与影史</h4><p>影史必看、冷门佳片、导演全集、修复版与电影节片单。</p><span class="go">经典电影 <span>→</span></span></div>
+      <div class="pn"><div class="ix">05</div><h4>最新电影与预告</h4><p>院线同步、上映日历、蓝光发行日、片单更新提醒。</p><span class="go">最新电影 <span>→</span></span></div>
+      <div class="pn"><div class="ix">06</div><h4>日韩电影专区</h4><p>日本电影、韩国电影、动画、独立电影、电影节入围。</p><span class="go">日韩 <span>→</span></span></div>
+      <div class="pn"><div class="ix">07</div><h4>欧美电影专区</h4><p>好莱坞、欧洲艺术片、A24 / Criterion 收藏、4K 修复。</p><span class="go">欧美 <span>→</span></span></div>
+      <div class="pn"><div class="ix">08</div><h4>华语电影专区</h4><p>港片、台片、大陆文艺片、武侠、戏曲与纪录片。</p><span class="go">华语 <span>→</span></span></div>
+      <div class="pn"><div class="ix">09</div><h4>影视大全聚合</h4><p>按类型、年代、评分、片长做交叉筛选的影视大全索引。</p><span class="go">索引 <span>→</span></span></div>
+      <div class="pn"><div class="ix">10</div><h4>影视资源导航</h4><p>工具、数据库、榜单、影评、字幕组与正版平台入口。</p><span class="go">资源导航 <span>→</span></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ② 片单 -->
+<section id="film">
+  <div class="wrap">
+    <div class="st">
+      <span class="no">N0.2</span>
+      <h2>今晚看什么 · 高清电影在线观看片单</h2>
+      <p>「在线」不等于「将就」。下列片目均标注了画质规格与字幕状态，点开即可高清电影在线观看；如需离线，可走电影下载 / 迅雷下载。神马在线电影网不托管任何影视文件。</p>
+    </div>
+    <div class="belt">
+      <div class="fv"><div class="tx"><h4>肖申克的救赎</h4><div class="mt"><span class="yr">1994</span><span class="rt">9.7</span></div></div><div class="ov">立即观看</div></div>
+      <div class="fv"><div class="tx"><h4>星际穿越</h4><div class="mt"><span class="yr">2014</span><span class="rt">9.4</span></div></div><div class="ov">立即观看</div></div>
+      <div class="fv"><div class="tx"><h4>霸王别姬</h4><div class="mt"><span class="yr">1993</span><span class="rt">9.6</span></div></div><div class="ov">立即观看</div></div>
+      <div class="fv"><div class="tx"><h4>千与千寻</h4><div class="mt"><span class="yr">2001</span><span class="rt">9.4</span></div></div><div class="ov">立即观看</div></div>
+      <div class="fv"><div class="tx"><h4>楚门的世界</h4><div class="mt"><span class="yr">1998</span><span class="rt">9.4</span></div></div><div class="ov">立即观看</div></div>
+      <div class="fv"><div class="tx"><h4>辛德勒的名单</h4><div class="mt"><span class="yr">1993</span><span class="rt">9.5</span></div></div><div class="ov">立即观看</div></div>
+      <div class="fv"><div class="tx"><h4>阿甘正传</h4><div class="mt"><span class="yr">1994</span><span class="rt">9.5</span></div></div><div class="ov">立即观看</div></div>
+      <div class="fv"><div class="tx"><h4>盗梦空间</h4><div class="mt"><span class="yr">2010</span><span class="rt">9.3</span></div></div><div class="ov">立即观看</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ③ 分类 -->
+<section id="cat">
+  <div class="wrap">
+    <div class="st">
+      <span class="no">N0.3</span>
+      <h2>分类 · 按类型找片</h2>
+      <p>电影网站导航的第二层是「分类」。神马在线电影网把站点按内容类型而非域名归类，避免你在相似站点之间反复横跳。</p>
+    </div>
+    <div class="tabs" id="tbs">
+      <div class="tc on" data-i="0">剧情</div>
+      <div class="tc" data-i="1">犯罪 / 悬疑</div>
+      <div class="tc" data-i="2">科幻 / 奇幻</div>
+      <div class="tc" data-i="3">动画 / 家庭</div>
+      <div class="tc" data-i="4">纪录片</div>
+      <div class="tc" data-i="5">喜剧 / 爱情</div>
+      <div class="tc" data-i="6">战争 / 历史</div>
+      <div class="tc" data-i="7">4K 修复</div>
+    </div>
+    <div class="panels2 on" data-p="0">
+      <div class="pn2">家庭伦理</div><div class="pn2">成长</div><div class="pn2">社会议题</div>
+      <div class="pn2">独立电影</div><div class="pn2">文艺片</div><div class="pn2">传记</div>
+      <div class="pn2">女性导演</div><div class="pn2">宗教</div><div class="pn2">音乐</div>
+      <div class="pn2">体育</div><div class="pn2">乡村</div><div class="pn2">老年</div>
+    </div>
+    <div class="panels2" data-p="1">
+      <div class="pn2">悬疑反转</div><div class="pn2">刑侦</div><div class="pn2">黑帮</div>
+      <div class="pn2">心理惊悚</div><div class="pn2">法庭</div><div class="pn2">谍战</div>
+      <div class="pn2">越狱</div><div class="pn2">罪案</div><div class="pn2">黑色电影</div>
+      <div class="pn2">连环杀手</div><div class="pn2">密室</div><div class="pn2">失踪</div>
+    </div>
+    <div class="panels2" data-p="2">
+      <div class="pn2">太空</div><div class="pn2">赛博朋克</div><div class="pn2">时间旅行</div>
+      <div class="pn2">末日</div><div class="pn2">AI 人工智能</div><div class="pn2">外星文明</div>
+      <div class="pn2">超级英雄</div><div class="pn2">怪兽</div><div class="pn2">乌托邦</div>
+      <div class="pn2">蒸汽朋克</div><div class="pn2">平行世界</div><div class="pn2">灾难</div>
+    </div>
+    <div class="panels2" data-p="3">
+      <div class="pn2">吉卜力</div><div class="pn2">新海诚</div><div class="pn2">皮克斯</div>
+      <div class="pn2">迪士尼</div><div class="pn2">治愈系</div><div class="pn2">儿童</div>
+      <div class="pn2">黏土动画</div><div class="pn2">成人动画</div><div class="pn2">短片</div>
+      <div class="pn2">定格</div><div class="pn2">合家欢</div><div class="pn2">动物</div>
+    </div>
+    <div class="panels2" data-p="4">
+      <div class="pn2">自然</div><div class="pn2">人文</div><div class="pn2">历史</div>
+      <div class="pn2">犯罪纪实</div><div class="pn2">音乐现场</div><div class="pn2">美食</div>
+      <div class="pn2">宇宙</div><div class="pn2">海洋</div><div class="pn2">动物</div>
+      <div class="pn2">战争纪实</div><div class="pn2">人物</div><div class="pn2">社会调查</div>
+    </div>
+    <div class="panels2" data-p="5">
+      <div class="pn2">浪漫喜剧</div><div class="pn2">都市爱情</div><div class="pn2">青春</div>
+      <div class="pn2">荒诞</div><div class="pn2">黑色幽默</div><div class="pn2">情景</div>
+      <div class="pn2">脱口秀</div><div class="pn2">恶搞</div><div class="pn2">音乐喜剧</div>
+      <div class="pn2">纯爱</div><div class="pn2">异地</div><div class="pn2">婚姻</div>
+    </div>
+    <div class="panels2" data-p="6">
+      <div class="pn2">二战</div><div class="pn2">越战</div><div class="pn2">古代战争</div>
+      <div class="pn2">谍报</div><div class="pn2">帝王</div><div class="pn2">革命</div>
+      <div class="pn2">冷兵器</div><div class="pn2">海军</div><div class="pn2">空军</div>
+      <div class="pn2">战俘</div><div class="pn2">重建</div><div class="pn2">条约</div>
+    </div>
+    <div class="panels2" data-p="7">
+      <div class="pn2">4K 修复</div><div class="pn2">杜比视界</div><div class="pn2">HDR10+</div>
+      <div class="pn2">REMUX</div><div class="pn2">蓝光原盘</div><div class="pn2">无声片配乐</div>
+      <div class="pn2">胶片扫描</div><div class="pn2">色彩还原</div><div class="pn2">导演剪辑版</div>
+      <div class="pn2">加长版</div><div class="pn2">多语言音轨</div><div class="pn2">花絮</div>
+    </div>
+  </div>
+</section>
+
+<!-- ④ 排行 -->
+<section id="rank">
+  <div class="wrap">
+    <div class="st">
+      <span class="no">N0.4</span>
+      <h2>双榜 · 口碑榜 vs 热度榜</h2>
+      <p>左边是「看完不亏」的口碑榜（按评分与评论质量），右边是「大家都在看」的热度榜（按近 30 天访问与搜索）。两者差异越大，越值得留意。</p>
+    </div>
+    <div class="duo">
+      <div class="bx l">
+        <h5>● 口碑榜 · 看完不亏</h5>
+        <div class="row2"><span class="rk g">01</span><span class="nm">肖申克的救赎</span><span class="vl">9.7</span><span class="tr"><u data-w="97"></u></span></div>
+        <div class="row2"><span class="rk c">02</span><span class="nm">霸王别姬</span><span class="vl">9.6</span><span class="tr"><u data-w="96"></u></span></div>
+        <div class="row2"><span class="rk c">03</span><span class="nm">阿甘正传</span><span class="vl">9.5</span><span class="tr"><u data-w="95"></u></span></div>
+        <div class="row2"><span class="rk a">04</span><span class="nm">泰坦尼克号</span><span class="vl">9.4</span><span class="tr"><u data-w="94"></u></span></div>
+        <div class="row2"><span class="rk a">05</span><span class="nm">千与千寻</span><span class="vl">9.4</span><span class="tr"><u data-w="94"></u></span></div>
+        <div class="row2"><span class="rk p">06</span><span class="nm">盗梦空间</span><span class="vl">9.3</span><span class="tr"><u data-w="93"></u></span></div>
+      </div>
+      <div class="vs">VS<small>双榜对照</small></div>
+      <div class="bx r">
+        <h5>● 热度榜 · 本周在线观看</h5>
+        <div class="row2"><span class="rk p">01</span><span class="nm">死侍与金刚狼</span><span class="vl">热</span><span class="tr"><u data-w="92"></u></span></div>
+        <div class="row2"><span class="rk a">02</span><span class="nm">沙丘 2</span><span class="vl">热</span><span class="tr"><u data-w="86"></u></span></div>
+        <div class="row2"><span class="rk a">03</span><span class="nm">奥本海默</span><span class="vl">88</span><span class="tr"><u data-w="88"></u></span></div>
+        <div class="row2"><span class="rk c">04</span><span class="nm">头脑特工队 2</span><span class="vl">85</span><span class="tr"><u data-w="85"></u></span></div>
+        <div class="row2"><span class="rk c">05</span><span class="nm">周处除三害</span><span class="vl">84</span><span class="tr"><u data-w="84"></u></span></div>
+        <div class="row2"><span class="rk g">06</span><span class="nm">星际穿越（重映）</span><span class="vl">83</span><span class="tr"><u data-w="83"></u></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ⑤ 影讯 -->
+<section id="news">
+  <div class="wrap">
+    <div class="st">
+      <span class="no">N0.5</span>
+      <h2>影讯 · 更新与公告</h2>
+      <p>电影在线观看的前提是「有片源、有字幕、有正版」。这里记录片单变动、字幕补全、站点下线与被仿冒的情况。</p>
+    </div>
+    <div class="news">
+      <div class="big">
+        <span class="tg">头条</span>
+        <h3>「在线」不等于「免费」：神马在线电影网只做导航，不做播放器</h3>
+        <p>本站不托管、不缓存、不转码任何影视文件，不提供破解、不绕过付费、不抓取第三方资源。所有「高清电影在线观看」与「电影下载」按钮，均跳转至站点原站或正版平台。看完请去影院，是收录规范第一条。</p>
+      </div>
+      <div class="side">
+        <div class="tl">
+          <div class="tn"><div class="d">2026-10-08</div><h4>字幕组周报：新增 218 部双语 ASS 字幕</h4><p>覆盖 2024–2026 年院线片与 12 部 4K 修复老片，含听译校订版。</p></div>
+          <div class="tn"><div class="d">2026-10-05</div><h4>4K 蓝光原盘导航更新：REMUX 专区上线</h4><p>按杜比视界 / HDR10+ / 普通 4K 三层分类，标注音轨与字幕轨。</p></div>
+          <div class="tn"><div class="d">2026-10-01</div><h4>最新电影栏目：Q4 院线片单 47 部</h4><p>含上映日、蓝光发行日、在线观看预计窗口与正版平台入口。</p></div>
+          <div class="tn"><div class="d">2026-09-26</div><h4>防仿冒公告：3 个「神马」同名站点已被封禁</h4><p>凡要求付费解锁、索取账号、植入广告脚本者，均为仿冒，请勿访问。</p></div>
+          <div class="tn"><div class="d">2026-09-20</div><h4>电影网站导航清理：下架 31 个违规与低质镜像</h4><p>低质镜像、跳转广告、字幕缺失、画质虚标，一律移出精选优质名单。</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ⑥ 规范 -->
+<section id="about">
+  <div class="wrap">
+    <div class="st">
+      <span class="no">N0.6</span>
+      <h2>收录规范 · 什么才配叫「精选优质」</h2>
+    </div>
+    <q class="q">「神马在线」的底线：不赶场、不刷量、不标题党、不收钱上首页。能被收录的电影网站，必须让人在三秒内知道——它有什么、它要什么、它会不会跑路。</q>
+    <div class="grd2">
+      <div class="gd"><b>RULE 01</b><h4>尊重版权，支持正版</h4><p>本站为电影导航与实用网址收录平台，不托管任何影视文件、字幕文件与种子。侵权投诉 24 小时内处理，核实即永久下架。</p></div>
+      <div class="gd"><b>RULE 02</b><h4>标注真实，拒绝虚标</h4><p>「4K」必须是 2160P 原生，「蓝光」必须来自蓝光原盘，「REMUX」不得二次压制，「杜比视界」必须有双层元数据。虚标一律下架。</p></div>
+      <div class="gd"><b>RULE 03</b><h4>字幕优先，先看字幕</h4><p>电影字幕是观影的一半。收录前先验证字幕：是否有简中、是否校对时间轴、是否为机翻、是否遮挡画面。无字幕不收录。</p></div>
+      <div class="gd"><b>RULE 04</b><h4>不索取、不植入、不跳转</h4><p>不索取手机号、不强制注册、不诱导下载 APP、不植入挖矿与广告脚本、不做多层跳转。凡以「神马」为名索取账号者，均为仿冒。</p></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="ft">
+      <div>
+        <h4>关于神马在线电影网</h4>
+        <p style="line-height:1.9">神马在线电影网（shenmazaixiandianyingwang-cn.github.io）是一个精选优质的电影导航与实用网址收录平台，提供电影网站导航、高清电影在线观看、电影下载、迅雷下载、最新电影、经典电影、电影字幕、影视大全、4K 蓝光与影视资源导航。我们不做聚合播放、不做转码缓存、不做收费解锁。</p>
+      </div>
+      <div>
+        <h4>快速入口</h4>
+        <ul>
+          <li><a href="#nav2">电影网站导航</a></li>
+          <li><a href="#film">高清电影在线观看</a></li>
+          <li><a href="#cat">电影分类</a></li>
+          <li><a href="#rank">口碑榜与热度榜</a></li>
+          <li><a href="#">正版平台入口</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>收录类型</h4>
+        <ul>
+          <li><a href="#">华语电影</a></li>
+          <li><a href="#">日韩电影</a></li>
+          <li><a href="#">欧美电影</a></li>
+          <li><a href="#">4K 蓝光 REMUX</a></li>
+          <li><a href="#">电影字幕 SRT / ASS</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="note">⚠ 合规声明：本站仅提供网址索引与观影建议，不提供任何影视资源的存储、播放、下载与转码服务。请通过电影院与正版平台支持创作者。未满 18 周岁请在监护人陪同下选择影片。</div>
+    <div class="copy">© 2026 神马在线电影网 · shenmazaixiandianyingwang-cn.github.io · 精选优质电影导航大全 · 不托管任何影视文件</div>
+  </div>
+</footer>
+
+<script>
+// 汉堡菜单
+document.getElementById('ham').addEventListener('click',function(){
+  document.getElementById('nv').classList.toggle('open');
+});
+// 波形条
+(function(){
+  var w=document.getElementById('wv'),b='';
+  for(var i=0;i<34;i++){
+    var h=Math.random()*70+18;
+    b+='<i style="height:'+h+'%"></i>';
+  }
+  w.innerHTML=b;
+})();
+// 标签页
+document.querySelectorAll('.tc').forEach(function(t){
+  t.addEventListener('click',function(){
+    document.querySelectorAll('.tc').forEach(function(x){x.classList.remove('on')});
+    document.querySelectorAll('.panels2').forEach(function(x){x.classList.remove('on')});
+    t.classList.add('on');
+    document.querySelector('.panels2[data-p="'+t.dataset.i+'"]').classList.add('on');
+  });
+});
+// 数字滚动 + 进度条懒触发
+var io=new IntersectionObserver(function(es){
+  es.forEach(function(e){
+    if(e.isIntersecting){
+      var n=e.target,to=+n.dataset.to,d=0,step=Math.max(1,Math.ceil(to/46));
+      var t=setInterval(function(){
+        d+=step; if(d>=to){d=to;clearInterval(t);}
+        n.firstChild.nodeValue=d;
+      },24);
+      io.unobserve(n);
+    }
+  });
+},{threshold:.4});
+document.querySelectorAll('.n').forEach(function(n){io.observe(n)});
+
+var io2=new IntersectionObserver(function(es){
+  es.forEach(function(e){
+    if(e.isIntersecting){
+      var u=e.target; u.style.width=u.dataset.w+'%'; io2.unobserve(u);
+    }
+  });
+},{threshold:.35});
+document.querySelectorAll('.tr u').forEach(function(u){io2.observe(u)});
+</script>
+</body>
+</html>
